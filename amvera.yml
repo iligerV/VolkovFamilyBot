@@ -1,0 +1,12 @@
+meta:
+  environment: jvm
+  toolchain:
+    name: maven
+    version: 17
+
+build:
+  args: spring-boot:repackage -Pproduction
+
+run:
+  jarName: family-bot-1.0-SNAPSHOT.jar
+  containerPort: 8080
