@@ -9,3 +9,4 @@ build:
 
 run:
   jarName: family-bot-1.0-SNAPSHOT.jar
+  containerPort: 8080
