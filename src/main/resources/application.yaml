@@ -3,12 +3,3 @@ telegram:
   webhook-path: "https://volkovfamilybot-imistrafik.amvera.io/"
   bot-name: "@VolkovFamilyBot"
   bot-token: "5804740422:AAHFTWY92HNNSbAUGbYm4pA7oYFqUmqi1TM"
-spring:
-  redis:
-    database: 0
-    host: "<...>.compute-1.amazonaws.com"
-    port: "<как правило, 5 цифр, если деплоим на Heroku>"
-    password: "<очень длинный пароль:)>"
-    ssl: true
-server:
-  port: "8080"
