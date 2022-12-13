@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.taksebe.telegram</groupId>
+    <groupId>ru.family-bot.telegram</groupId>
     <artifactId>family-bot</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>family-bot</name>
