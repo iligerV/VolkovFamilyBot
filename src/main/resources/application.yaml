@@ -3,3 +3,6 @@ telegram:
   webhook-path: "https://volkovfamilybot-imistrafik.amvera.io/"
   bot-name: "@VolkovFamilyBot"
   bot-token: "5804740422:AAHFTWY92HNNSbAUGbYm4pA7oYFqUmqi1TM"
+server:
+  port: "80"
+
