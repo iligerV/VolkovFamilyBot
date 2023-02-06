@@ -11,15 +11,15 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Person {
+public class Event {
 
     /**
-     * Имя человека
+     * Название события
      */
     String name;
 
     /**
-     * Дата рождения
+     * Дата события
      */
     Date date;
 }

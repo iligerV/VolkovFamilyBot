@@ -1,19 +1,33 @@
 package ru.telegram.familyBot.constants.bot;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Названия кнопок основной клавиатуры
  */
-public enum ButtonNameEnum {
-    GET_DATES_BUTTON("Напомнить даты"),
-    HELP_BUTTON("Помощь");
-    
-    private final String buttonName;
 
-    ButtonNameEnum(String buttonName) {
-        this.buttonName = buttonName;
+@Getter
+@AllArgsConstructor
+public enum ButtonNameEnum {
+    WORK_WITH_DATE("Работа с датами", "Выберите действие \uD83D\uDC47"),
+    HELP_BUTTON("Помощь", "");
+
+    private static final Map<String, ButtonNameEnum> BY_BUTTON_NAME = new HashMap<>();
+
+    static {
+        for (ButtonNameEnum e : values()) {
+            BY_BUTTON_NAME.put(e.buttonName, e);
+        }
     }
 
-    public String getButtonName() {
-        return buttonName;
+    private final String buttonName;
+    private final String inlineMsg;
+
+    public static ButtonNameEnum valueOfButtonName(String btnName) {
+        return BY_BUTTON_NAME.get(btnName);
     }
 }

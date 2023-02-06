@@ -17,7 +17,7 @@ public class ReplyKeyboardMaker {
 
     public ReplyKeyboardMarkup getMainMenuKeyboard() {
         KeyboardRow row1 = new KeyboardRow();
-        row1.add(new KeyboardButton(ButtonNameEnum.GET_DATES_BUTTON.getButtonName()));
+        row1.add(new KeyboardButton(ButtonNameEnum.WORK_WITH_DATE.getButtonName()));
 
         KeyboardRow row2 = new KeyboardRow();
         row2.add(new KeyboardButton(ButtonNameEnum.HELP_BUTTON.getButtonName()));

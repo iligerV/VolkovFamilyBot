@@ -15,8 +15,6 @@ import ru.telegram.familyBot.constants.bot.BotMessageEnum;
 import ru.telegram.familyBot.telegram.handlers.CallbackQueryHandler;
 import ru.telegram.familyBot.telegram.handlers.MessageHandler;
 
-import java.io.IOException;
-
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -43,7 +41,7 @@ public class FamilyBot extends SpringWebhookBot {
         }
     }
 
-    private BotApiMethod<?> handleUpdate(Update update) throws IOException {
+    private BotApiMethod<?> handleUpdate(Update update) {
         if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
             return callbackQueryHandler.processCallbackQuery(callbackQuery);
